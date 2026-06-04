@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NAIRU — Transforme seu negócio em uma máquina de resultados</title>
+  <meta name="description"
+    content="NAIRU constrói landing pages, sites profissionais, sistemas de gestão e automações que escalam o seu negócio." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="nairu.css" />
+</head>
+
+<body>
+
+  <!-- SCROLL PROGRESS -->
+  <div class="nx-progress" id="nxProgress"></div>
+
+  <!-- LOADER -->
+  <div id="nx-loader">
+    <div class="ldr-inner">
+      <img src="logo.png" alt="NAIRU" class="ldr-img" />
+      <span class="ldr-name">NAIRU</span>
+      <div class="ldr-bar-wrap">
+        <div class="ldr-bar" id="ldrBar"></div>
+      </div>
+      <span class="ldr-pct" id="ldrPct">0%</span>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#" class="nav__logo logoHeader">
+        <img src="logo.png" alt="NAIRU" class="nav__logo-img" />
+        <span class="nav__logo-text">NAIRU</span>
+      </a>
+      <nav class="nav__links">
+        <a href="#services">Serviços</a>
+        <a href="#results">Resultados</a>
+        <a href="#about">Sobre</a>
+        <a href="#platform">Plataforma</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#testimonials">Clientes</a>
+      </nav>
+      <div class="nav__cta">
+        <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+          <svg class="ico-moon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+          <svg class="ico-sun" viewBox="0 0 24 24" fill="currentColor">
+            <circle cx="12" cy="12" r="5" />
+            <path
+              d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none" />
+          </svg>
+        </button>
+        <a href="#cta" class="btn btn--ghost">Entrar em contato</a>
+        <a href="#cta" class="btn btn--primary mag-btn">
+          Agendar diagnóstico
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+            <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </a>
+      </div>
+      <div class="nav__mobile-extras">
+        <button class="theme-toggle" id="themeToggleMobile" aria-label="Alternar tema">
+          <svg class="ico-moon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+          <svg class="ico-sun" viewBox="0 0 24 24" fill="currentColor">
+            <circle cx="12" cy="12" r="5" />
+            <path
+              d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none" />
+          </svg>
+        </button>
+        <button class="nav__burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+    <div class="nav__mobile" id="navMobile">
+      <a href="#services">Serviços</a>
+      <a href="#results">Resultados</a>
+      <a href="#about">Sobre</a>
+      <a href="#platform">Plataforma</a>
+      <a href="#portfolio">Portfólio</a>
+      <a href="#testimonials">Clientes</a>
+      <a href="#cta" class="btn btn--primary">Agendar diagnóstico →</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <div class="hero__eyebrow">
+          <span class="chip-dot"></span>
+          <span>Estúdio de design &amp; engenharia digital</span>
+        </div>
+        <h1 class="hero__title split-title">
+          Transformamos empresas em <span class="grad-text">máquinas digitais</span> de aquisição<span
+            class="hero__dot">.</span>
+        </h1>
+        <p class="hero__sub">
+          Sites, sistemas e automações projetados para gerar mais vendas, reduzir operações manuais e acelerar o
+          crescimento da sua empresa.
+        </p>
+        <div class="hero__ctas">
+          <a href="#cta" class="btn btn--primary btn--lg mag-btn">
+            Solicitar diagnóstico
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+              <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+          <a href="#results" class="btn btn--ghost btn--lg">Ver resultados</a>
+        </div>
+        <div class="hero__social-proof">
+          <div class="hero__avatars">
+            <div class="hav">RM</div>
+            <div class="hav">CL</div>
+            <div class="hav">DT</div>
+            <div class="hav">+</div>
+          </div>
+          <div class="hero__social-text">
+            <span class="hero__stars">★★★★★</span>
+            <span class="hero__social-copy">+90 empresas transformadas</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__visual">
+        <div class="hero__dashboard">
+          <div class="dash__header">
+            <div class="dash__logo">
+              <img src="logo.png" alt="NAIRU" class="dash__logo-img" />
+              <span>NAIRU Dashboard</span>
+            </div>
+            <div class="dash__header-actions">
+              <div class="dash__dot"></div>
+              <div class="dash__dot"></div>
+            </div>
+          </div>
+          <div class="dash__kpis">
+            <div class="dash__kpi dash__kpi--wide">
+              <span class="dash__kpi-label">Receita Gerada</span>
+              <span class="dash__kpi-val">R$1.256.980</span>
+              <span class="dash__kpi-delta up">+127% vs último mês</span>
+              <svg class="dash__mini-chart" viewBox="0 0 120 40" preserveAspectRatio="none">
+                <defs>
+                  <linearGradient id="mg1" x1="0" x2="0" y1="0" y2="1">
+                    <stop offset="0%" stop-color="#22C55E" stop-opacity=".25" />
+                    <stop offset="100%" stop-color="#22C55E" stop-opacity="0" />
+                  </linearGradient>
+                </defs>
+                <path d="M0,35 C20,28 35,22 50,18 C65,14 75,20 90,10 C105,2 115,8 120,4 L120,40 L0,40Z"
+                  fill="url(#mg1)" />
+                <path d="M0,35 C20,28 35,22 50,18 C65,14 75,20 90,10 C105,2 115,8 120,4" fill="none" stroke="#22C55E"
+                  stroke-width="1.8" stroke-linecap="round" />
+              </svg>
+            </div>
+            <div class="dash__kpi">
+              <span class="dash__kpi-label">Leads Gerados</span>
+              <span class="dash__kpi-val">4.320</span>
+              <span class="dash__kpi-delta up">+47% vs último mês</span>
+            </div>
+          </div>
+          <div class="dash__row2">
+            <div class="dash__kpi dash__kpi--conv">
+              <span class="dash__kpi-label">Conversão</span>
+              <div class="dash__conv-ring">
+                <svg viewBox="0 0 60 60">
+                  <circle cx="30" cy="30" r="24" fill="none" stroke="rgba(255,255,255,.06)" stroke-width="5" />
+                  <circle cx="30" cy="30" r="24" fill="none" stroke="#22C55E" stroke-width="5" stroke-dasharray="150.8"
+                    stroke-dashoffset="38" stroke-linecap="round" transform="rotate(-90 30 30)" />
+                </svg>
+                <span class="dash__conv-val">32.6%</span>
+              </div>
+              <span class="dash__kpi-delta up">+12% vs último mês</span>
+            </div>
+            <div class="dash__aside">
+              <div class="dash__mini-kpi">
+                <div class="dash__mini-ico" style="color:#22C55E">↗</div>
+                <div>
+                  <div class="dash__mini-val">+47</div>
+                  <div class="dash__mini-label">Leads este mês</div>
+                </div>
+              </div>
+              <div class="dash__mini-kpi">
+                <div class="dash__mini-ico" style="color:#60A5FA">↗</div>
+                <div>
+                  <div class="dash__mini-val">+132%</div>
+                  <div class="dash__mini-label">Conversão</div>
+                </div>
+              </div>
+              <div class="dash__mini-kpi">
+                <div class="dash__mini-ico" style="color:#FBBF24">⏱</div>
+                <div>
+                  <div class="dash__mini-val">24h</div>
+                  <div class="dash__mini-label">Economizadas</div>
+                </div>
+              </div>
+              <div class="dash__mini-kpi">
+                <div class="dash__mini-ico" style="color:#22C55E">◎</div>
+                <div>
+                  <div class="dash__mini-val">6.4x</div>
+                  <div class="dash__mini-label">ROI Médio</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dash__logo-3d">
+            <img src="logo-flat.png" alt="NAIRU" id="heroLogoImg" class="dash__logo-3d-img" />
+            <div class="dash__logo-glow"></div>
+          </div>
+        </div>
+        <div class="float-card float-a">
+          <div class="fc-ico" style="color:#22C55E">↑</div>
+          <div>
+            <div class="fc-t">Receita</div>
+            <div class="fc-v">+24% este mês</div>
+          </div>
+        </div>
+        <div class="float-card float-b">
+          <div class="fc-ico fc-ico--b">⚡</div>
+          <div>
+            <div class="fc-t">Automação ativa</div>
+            <div class="fc-v">128 fluxos</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="brands">
+      <span class="brands__label">Empresas que confiam na NAIRU</span>
+      <div class="brands__track">
+        <div class="brands__inner">
+          <span>◆ Northwind</span><span>◇ Lumen</span><span>▲ Halcyon</span><span>● Orbital</span><span>◼
+            Vantage</span><span>✦ Meridian</span>
+          <span>◆ Northwind</span><span>◇ Lumen</span><span>▲ Halcyon</span><span>● Orbital</span><span>◼
+            Vantage</span><span>✦ Meridian</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESULTS -->
+  <section class="section" id="results">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow">Resultados que falam por si.</span>
+      </div>
+      <div class="results-grid">
+        <div class="result">
+          <div class="result__ico" style="color:#22C55E">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="1.8" />
+              <circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="1.8" />
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" />
+            </svg>
+          </div>
+          <strong data-count="380" data-prefix="+">0</strong><span class="sfx">%</span>
+          <p>Aumento de leads</p>
+        </div>
+        <div class="result">
+          <div class="result__ico" style="color:#FBBF24">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+              <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.8" />
+              <polyline points="12,6 12,12 16,14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+            </svg>
+          </div>
+          <strong data-count="42" data-prefix="-">0</strong><span class="sfx">%</span>
+          <p>Redução no tempo operacional</p>
+        </div>
+        <div class="result">
+          <div class="result__ico" style="color:#60A5FA">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+              <polyline points="22,12 18,12 15,21 9,3 6,12 2,12" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <strong data-count="127" data-prefix="+">0</strong><span class="sfx">%</span>
+          <p>Aumento de conversões</p>
+        </div>
+        <div class="result">
+          <div class="result__ico" style="color:#22C55E">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+              <polyline points="23,6 13.5,15.5 8.5,10.5 1,18" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round" />
+              <polyline points="17,6 23,6 23,12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </div>
+          <strong data-count="5.2" data-prefix="+">0</strong><span class="sfx">x</span>
+          <p>ROI médio dos projetos</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow">Nossos Serviços</span>
+        <h2 class="split-title">O que a NAIRU constrói para você.</h2>
+        <p>Soluções digitais completas — do conceito ao produto em produção.</p>
+      </div>
+      <div class="svcs">
+        <article class="svc reveal">
+          <div class="svc__top">
+            <div class="svc__num">01</div>
+            <div class="svc__ico">
+              <svg viewBox="0 0 24 24" fill="none">
+                <rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.6" />
+                <path d="M3 10h18" stroke="currentColor" stroke-width="1.6" />
+              </svg>
+            </div>
+          </div>
+          <h3>Sites &amp; Landing Pages</h3>
+          <p>Sites modernos, rápidos e otimizados para conversão.</p>
+          <div class="svc__footer">
+            <span class="svc__tag">Alta conversão</span>
+            <div class="svc__arrow">→</div>
+          </div>
+        </article>
+        <article class="svc reveal">
+          <div class="svc__top">
+            <div class="svc__num">02</div>
+            <div class="svc__ico">
+              <svg viewBox="0 0 24 24" fill="none">
+                <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.6" />
+                <path d="M3 9h18M9 21V9" stroke="currentColor" stroke-width="1.6" />
+              </svg>
+            </div>
+          </div>
+          <h3>Sistemas Web</h3>
+          <p>Plataformas personalizadas que otimizam sua operação e gestão.</p>
+          <div class="svc__footer">
+            <div class="svc__arrow">→</div>
+          </div>
+        </article>
+        <article class="svc reveal">
+          <div class="svc__top">
+            <div class="svc__num">03</div>
+            <div class="svc__ico" style="color:#22C55E">
+              <svg viewBox="0 0 24 24" fill="none">
+                <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="1.6" />
+                <path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+              </svg>
+            </div>
+          </div>
+          <h3>SEO &amp; Performance</h3>
+          <p>Posicionamos seu site no topo do Google e aumentamos sua visibilidade.</p>
+          <div class="svc__footer">
+            <span class="svc__tag svc__tag--green">1º Lugar</span>
+            <div class="svc__arrow">→</div>
+          </div>
+        </article>
+        <article class="svc reveal">
+          <div class="svc__top">
+            <div class="svc__num">04</div>
+            <div class="svc__ico" style="color:#60A5FA">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M12 19l7-7 3 3-7 7-3-3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
+                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" stroke="currentColor" stroke-width="1.6"
+                  stroke-linejoin="round" />
+                <circle cx="9" cy="9" r="1.5" stroke="currentColor" stroke-width="1.6" />
+              </svg>
+            </div>
+          </div>
+          <h3>UI/UX Design</h3>
+          <p>Design estratégico que conecta, engaja e converte visitantes em clientes.</p>
+          <div class="svc__footer">
+            <div class="svc__arrow">→</div>
+          </div>
+        </article>
+        <article class="svc reveal">
+          <div class="svc__top">
+            <div class="svc__num">05</div>
+            <div class="svc__ico" style="color:#FBBF24">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M12 2a10 10 0 1 0 10 10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+                <path d="M22 2 12 12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+                <path d="M13 2h9v9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+          </div>
+          <h3>IA &amp; Automações</h3>
+          <p>Automatizamos processos, integramos sistemas e aplicamos inteligência artificial ao seu negócio.</p>
+          <div class="svc__footer">
+            <div class="svc__arrow">→</div>
+          </div>
+        </article>
+        <article class="svc reveal">
+          <div class="svc__top">
+            <div class="svc__num">06</div>
+            <div class="svc__ico">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M4 6h16M4 12h16M4 18h10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+              </svg>
+            </div>
+          </div>
+          <h3>Gestão de Clientes</h3>
+          <p>Sistemas CRM sob medida para organizar leads, vendas e relacionamento.</p>
+          <div class="svc__footer">
+            <div class="svc__arrow">→</div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container about">
+      <div class="about__media">
+        <div class="about__panel">
+          <div class="about__panel-top">
+            <span></span><span></span><span></span>
+            <em>nairu / studio</em>
+          </div>
+          <div class="about__panel-body">
+            <div class="ap-row">
+              <div class="ap-bar" style="--w:82%"></div><span>Estratégia</span>
+            </div>
+            <div class="ap-row">
+              <div class="ap-bar" style="--w:94%"></div><span>Design</span>
+            </div>
+            <div class="ap-row">
+              <div class="ap-bar" style="--w:88%"></div><span>Engenharia</span>
+            </div>
+            <div class="ap-row">
+              <div class="ap-bar" style="--w:76%"></div><span>Automação</span>
+            </div>
+          </div>
+        </div>
+        <div class="about__floater">
+          <img src="logo.png" alt="NAIRU" class="af__avatar-img" />
+          <div>
+            <div class="af__t">Equipe dedicada</div>
+            <div class="af__v">Estratégia · Design · Dev</div>
+          </div>
+        </div>
+      </div>
+      <div class="about__text">
+        <span class="eyebrow">Sobre a NAIRU</span>
+        <h2 class="split-title">Engenharia, design e estratégia em um único time.</h2>
+        <p>Somos uma startup focada em transformar empresas em operações digitais de verdade. Unimos design
+          cinematográfico, código robusto e processos inteligentes para criar produtos que vendem, organizam e escalam.
+        </p>
+        <ul class="bullets">
+          <li>Foco em performance e resultado mensurável</li>
+          <li>Design system próprio para identidade premium</li>
+          <li>Entrega contínua com previsibilidade</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLATFORM -->
+  <section class="section" id="platform">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow">Plataforma NAIRU</span>
+        <h2 class="split-title">Um sistema construído para escalar.</h2>
+        <p>Gerencie clientes, automações, receita e relatórios em um único lugar.</p>
+      </div>
+      <div class="platform reveal">
+        <div class="plat__sidebar">
+          <nav class="plat__nav">
+            <button class="plat__nav-item active" data-tab="overview"><svg viewBox="0 0 24 24" fill="none">
+                <rect x="3" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.6" />
+                <rect x="14" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.6" />
+                <rect x="3" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.6" />
+                <rect x="14" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.6" />
+              </svg>Overview</button>
+            <button class="plat__nav-item" data-tab="clientes"><svg viewBox="0 0 24 24" fill="none">
+                <circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="1.6" />
+                <path d="M2 21c0-4 3.13-7 7-7s7 3 7 7" stroke="currentColor" stroke-width="1.6"
+                  stroke-linecap="round" />
+                <path d="M19 8v6M16 11h6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+              </svg>Clientes</button>
+            <button class="plat__nav-item" data-tab="automacao"><svg viewBox="0 0 24 24" fill="none">
+                <path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z" stroke="currentColor" stroke-width="1.6"
+                  stroke-linejoin="round" />
+              </svg>Automação</button>
+            <button class="plat__nav-item" data-tab="receita"><svg viewBox="0 0 24 24" fill="none">
+                <path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke="currentColor"
+                  stroke-width="1.6" stroke-linecap="round" />
+              </svg>Receita</button>
+            <button class="plat__nav-item" data-tab="relatorios"><svg viewBox="0 0 24 24" fill="none">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="currentColor"
+                  stroke-width="1.6" />
+                <polyline points="14,2 14,8 20,8" stroke="currentColor" stroke-width="1.6" />
+              </svg>Relatórios</button>
+            <button class="plat__nav-item" data-tab="stack"><svg viewBox="0 0 24 24" fill="none">
+                <rect x="2" y="3" width="20" height="4" rx="1.5" stroke="currentColor" stroke-width="1.6" />
+                <rect x="2" y="10" width="20" height="4" rx="1.5" stroke="currentColor" stroke-width="1.6" />
+                <rect x="2" y="17" width="20" height="4" rx="1.5" stroke="currentColor" stroke-width="1.6" />
+              </svg>Stack</button>
+          </nav>
+          <div class="plat__status"><span class="status-dot"></span><span>Todos sistemas online</span></div>
+        </div>
+        <div class="plat__main">
+          <div class="plat__topbar">
+            <div class="plat__topbar-left">
+              <span class="plat__page-title" id="platPageTitle">Overview</span>
+              <span class="plat__live"><span class="live-dot"></span>Ao vivo</span>
+            </div>
+            <div class="plat__topbar-right">
+              <span class="plat__date" id="platDate"></span>
+              <button class="btn btn--ghost btn--sm">+ Novo</button>
+            </div>
+          </div>
+
+          <!-- TAB: Overview -->
+          <div class="plat__tab active" id="tab-overview">
+            <div class="plat__kpis">
+              <div class="plat__kpi"><span class="pk-label">MRR</span><span class="pk-value">R$ 184.320</span><span
+                  class="pk-delta up">+12.4%</span></div>
+              <div class="plat__kpi"><span class="pk-label">Novos clientes</span><span
+                  class="pk-value">2.847</span><span class="pk-delta up">+8.1%</span></div>
+              <div class="plat__kpi"><span class="pk-label">Conversão</span><span class="pk-value">6.42%</span><span
+                  class="pk-delta up">+2.3%</span></div>
+              <div class="plat__kpi"><span class="pk-label">Churn</span><span class="pk-value">1.2%</span><span
+                  class="pk-delta down">−0.3%</span></div>
+            </div>
+            <div class="plat__chart-wrap">
+              <div class="plat__chart-label">Receita mensal (últimos 6 meses)</div>
+              <svg class="plat__chart" viewBox="0 0 600 180" preserveAspectRatio="none">
+                <defs>
+                  <linearGradient id="cg1" x1="0" x2="0" y1="0" y2="1">
+                    <stop offset="0%" stop-color="#22C55E" stop-opacity="0.25" />
+                    <stop offset="100%" stop-color="#22C55E" stop-opacity="0" />
+                  </linearGradient>
+                </defs>
+                <path d="M0,150 C80,130 140,110 200,90 C260,70 300,85 360,60 C420,35 480,45 600,15 L600,180 L0,180Z"
+                  fill="url(#cg1)" />
+                <path class="chart-line" d="M0,150 C80,130 140,110 200,90 C260,70 300,85 360,60 C420,35 480,45 600,15"
+                  fill="none" stroke="#22C55E" stroke-width="2" stroke-linecap="round" />
+                <text x="0" y="175" class="chart-label">Jan</text><text x="100" y="175"
+                  class="chart-label">Fev</text><text x="200" y="175" class="chart-label">Mar</text><text x="300"
+                  y="175" class="chart-label">Abr</text><text x="400" y="175" class="chart-label">Mai</text><text
+                  x="500" y="175" class="chart-label">Jun</text>
+              </svg>
+            </div>
+            <div class="plat__activity">
+              <div class="plat__activity-title">Atividade recente</div>
+              <div class="plat__activity-list" id="activityList"></div>
+            </div>
+          </div>
+
+          <!-- TAB: Clientes -->
+          <div class="plat__tab" id="tab-clientes">
+            <div class="plat__kpis">
+              <div class="plat__kpi"><span class="pk-label">Total</span><span class="pk-value">1.248</span><span
+                  class="pk-delta up">+14%</span></div>
+              <div class="plat__kpi"><span class="pk-label">Ativos</span><span class="pk-value">1.104</span><span
+                  class="pk-delta up">88.4%</span></div>
+              <div class="plat__kpi"><span class="pk-label">Novos (mês)</span><span class="pk-value">84</span><span
+                  class="pk-delta up">+22%</span></div>
+              <div class="plat__kpi"><span class="pk-label">NPS</span><span class="pk-value">74</span><span
+                  class="pk-delta up">+5 pts</span></div>
+            </div>
+            <div class="plat__table">
+              <div class="plat__table-head"><span>Cliente</span><span>Plano</span><span>MRR</span><span>Status</span>
+              </div>
+              <div class="plat__table-row"><span>Linden Fabricating</span><span
+                  class="text-muted">Enterprise</span><span class="text-muted">R$4.800</span><span><span
+                    class="badge badge--ok">Ativo</span></span></div>
+              <div class="plat__table-row"><span>Halcyon Group</span><span class="text-muted">Pro</span><span
+                  class="text-muted">R$2.400</span><span><span class="badge badge--ok">Ativo</span></span></div>
+              <div class="plat__table-row"><span>Orbital Systems</span><span class="text-muted">Pro</span><span
+                  class="text-muted">R$2.400</span><span><span class="badge badge--ok">Ativo</span></span></div>
+              <div class="plat__table-row"><span>Meridian Corp</span><span class="text-muted">Starter</span><span
+                  class="text-muted">R$980</span><span><span class="badge badge--warn">Trial</span></span></div>
+            </div>
+          </div>
+
+          <!-- TAB: Automação -->
+          <div class="plat__tab" id="tab-automacao">
+            <div class="plat__kpis">
+              <div class="plat__kpi"><span class="pk-label">Fluxos ativos</span><span class="pk-value">128</span><span
+                  class="pk-delta up">+18</span></div>
+              <div class="plat__kpi"><span class="pk-label">Execuções/dia</span><span class="pk-value">4.820</span><span
+                  class="pk-delta up">+12%</span></div>
+              <div class="plat__kpi"><span class="pk-label">Taxa de sucesso</span><span
+                  class="pk-value">99.3%</span><span class="pk-delta up">+0.4%</span></div>
+              <div class="plat__kpi"><span class="pk-label">Horas poupadas</span><span class="pk-value">72h</span><span
+                  class="pk-delta up">este mês</span></div>
+            </div>
+            <div class="plat__flows">
+              <div class="plat__flow-row">
+                <div class="flow-status ok"></div>
+                <div class="flow-info"><span class="flow-name">Lead → CRM → WhatsApp</span><span
+                    class="flow-desc">Captura e qualificação automática de leads</span></div><span
+                  class="flow-count">1.204 hoje</span>
+              </div>
+              <div class="plat__flow-row">
+                <div class="flow-status ok"></div>
+                <div class="flow-info"><span class="flow-name">Onboarding automático</span><span
+                    class="flow-desc">Sequência de e-mails + Slack para novos clientes</span></div><span
+                  class="flow-count">84 hoje</span>
+              </div>
+              <div class="plat__flow-row">
+                <div class="flow-status ok"></div>
+                <div class="flow-info"><span class="flow-name">Relatório semanal</span><span class="flow-desc">Geração e
+                    envio automático por e-mail</span></div><span class="flow-count">12 hoje</span>
+              </div>
+              <div class="plat__flow-row">
+                <div class="flow-status warn"></div>
+                <div class="flow-info"><span class="flow-name">Sincronização ERP</span><span
+                    class="flow-desc">Integração bidirecional com sistema legado</span></div><span
+                  class="flow-count">aguardando</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB: Receita -->
+          <div class="plat__tab" id="tab-receita">
+            <div class="plat__kpis">
+              <div class="plat__kpi"><span class="pk-label">MRR</span><span class="pk-value">R$184.320</span><span
+                  class="pk-delta up">+12.4%</span></div>
+              <div class="plat__kpi"><span class="pk-label">ARR</span><span class="pk-value">R$2.21M</span><span
+                  class="pk-delta up">+18%</span></div>
+              <div class="plat__kpi"><span class="pk-label">LTV médio</span><span class="pk-value">R$24.800</span><span
+                  class="pk-delta up">+9%</span></div>
+              <div class="plat__kpi"><span class="pk-label">CAC</span><span class="pk-value">R$1.240</span><span
+                  class="pk-delta down">−8%</span></div>
+            </div>
+            <div class="plat__breakdown">
+              <div class="pb-item"><span>Enterprise</span>
+                <div class="pb-bar">
+                  <div class="pb-fill" style="width:52%;--c:#22C55E"></div>
+                </div><span>52%</span>
+              </div>
+              <div class="pb-item"><span>Pro</span>
+                <div class="pb-bar">
+                  <div class="pb-fill" style="width:34%;--c:#60A5FA"></div>
+                </div><span>34%</span>
+              </div>
+              <div class="pb-item"><span>Starter</span>
+                <div class="pb-bar">
+                  <div class="pb-fill" style="width:14%;--c:#FBBF24"></div>
+                </div><span>14%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB: Relatórios -->
+          <div class="plat__tab" id="tab-relatorios">
+            <div class="plat__kpis">
+              <div class="plat__kpi"><span class="pk-label">Gerados</span><span class="pk-value">48</span><span
+                  class="pk-delta up">este mês</span></div>
+              <div class="plat__kpi"><span class="pk-label">Agendados</span><span class="pk-value">12</span><span
+                  class="pk-delta up">próx. 7 dias</span></div>
+              <div class="plat__kpi"><span class="pk-label">Exportados</span><span class="pk-value">204</span><span
+                  class="pk-delta up">+31%</span></div>
+              <div class="plat__kpi"><span class="pk-label">Automatizados</span><span class="pk-value">36</span><span
+                  class="pk-delta up">75%</span></div>
+            </div>
+            <div class="plat__table">
+              <div class="plat__table-head">
+                <span>Relatório</span><span>Formato</span><span>Data</span><span>Status</span></div>
+              <div class="plat__table-row"><span>Relatório Mensal Maio</span><span class="text-muted">PDF</span><span
+                  class="text-muted">hoje</span><span><span class="badge badge--ok">Pronto</span></span></div>
+              <div class="plat__table-row"><span>Funil de vendas Q2</span><span class="text-muted">XLS</span><span
+                  class="text-muted">ontem</span><span><span class="badge badge--ok">Pronto</span></span></div>
+              <div class="plat__table-row"><span>Retenção Q2 2026</span><span class="text-muted">PDF</span><span
+                  class="text-muted">3 dias</span><span><span class="badge badge--ok">Pronto</span></span></div>
+              <div class="plat__table-row"><span>Auditoria anual</span><span class="text-muted">PDF</span><span
+                  class="text-muted">-</span><span><span class="badge badge--warn">Pendente</span></span></div>
+            </div>
+          </div>
+
+          <!-- TAB: Stack -->
+          <div class="plat__tab" id="tab-stack">
+            <div class="plat__kpis">
+              <div class="plat__kpi"><span class="pk-label">Uptime</span><span class="pk-value">99.98%</span><span
+                  class="pk-delta up">SLA</span></div>
+              <div class="plat__kpi"><span class="pk-label">Deploy</span><span class="pk-value">v2.4.1</span><span
+                  class="pk-delta up">0 erros</span></div>
+              <div class="plat__kpi"><span class="pk-label">Latência</span><span class="pk-value">8ms</span><span
+                  class="pk-delta up">P99</span></div>
+              <div class="plat__kpi"><span class="pk-label">Serviços</span><span class="pk-value">14</span><span
+                  class="pk-delta up">online</span></div>
+            </div>
+            <div class="plat__stack-grid">
+              <div class="plat__stack-card"><svg viewBox="0 0 24 24" fill="none">
+                  <circle cx="12" cy="12" r="2.05" fill="#61DAFB" />
+                  <ellipse cx="12" cy="12" rx="9.5" ry="3.6" stroke="#61DAFB" stroke-width="1.1" />
+                  <ellipse cx="12" cy="12" rx="9.5" ry="3.6" stroke="#61DAFB" stroke-width="1.1"
+                    transform="rotate(60 12 12)" />
+                  <ellipse cx="12" cy="12" rx="9.5" ry="3.6" stroke="#61DAFB" stroke-width="1.1"
+                    transform="rotate(120 12 12)" />
+                </svg><span>React</span><small>UI</small></div>
+              <div class="plat__stack-card"><svg viewBox="0 0 24 24" fill="none">
+                  <circle cx="12" cy="12" r="10" fill="#000" />
+                  <path d="M7.5 8h1.15v5.72L16.5 8H17.5v8h-1.15V10.3L8.5 16H7.5V8z" fill="#fff" />
+                </svg><span>Next.js</span><small>SSR</small></div>
+              <div class="plat__stack-card"><svg viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M12 6c-2.67 0-4.33 1.33-5 4 1-1.33 2.17-1.83 3.5-1.5.76.19 1.3.74 1.9 1.35C13.38 10.85 14.49 12 17 12c2.67 0 4.33-1.33 5-4-1 1.33-2.17 1.83-3.5 1.5-.76-.19-1.3-.74-1.9-1.35C15.62 7.15 14.51 6 12 6zm-5 6c-2.67 0-4.33 1.33-5 4 1-1.33 2.17-1.83 3.5-1.5.76.19 1.3.74 1.9 1.35C7.38 16.85 8.49 18 11 18c2.67 0 4.33-1.33 5-4-1 1.33-2.17 1.83-3.5 1.5-.76-.19-1.3-.74-1.9-1.35C10.62 13.15 9.51 12 7 12z"
+                    fill="#38BDF8" />
+                </svg><span>Tailwind</span><small>CSS</small></div>
+              <div class="plat__stack-card"><svg viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M12 2.25L3 7.31v9.38L12 21.75l9-5.06V7.31L12 2.25zm6.75 13.5L12 19.5l-6.75-3.75v-7.5L12 4.5l6.75 3.75v7.5z"
+                    fill="#68A063" />
+                </svg><span>Node.js</span><small>Runtime</small></div>
+              <div class="plat__stack-card"><svg viewBox="0 0 24 24" fill="none">
+                  <ellipse cx="12" cy="5.5" rx="7" ry="2.5" stroke="#336791" stroke-width="1.2" />
+                  <path d="M5 5.5v5c0 1.38 3.13 2.5 7 2.5s7-1.12 7-2.5v-5" stroke="#336791" stroke-width="1.2" />
+                  <path d="M5 10.5v5c0 1.38 3.13 2.5 7 2.5s7-1.12 7-2.5v-5" stroke="#336791" stroke-width="1.2" />
+                </svg><span>PostgreSQL</span><small>DB</small></div>
+              <div class="plat__stack-card"><svg viewBox="0 0 24 24" fill="none">
+                  <ellipse cx="12" cy="8" rx="7" ry="2.2" fill="#DC382D" />
+                  <path d="M5 8v3c0 1.22 3.13 2.2 7 2.2s7-.98 7-2.2V8" stroke="#DC382D" stroke-width="1.1" />
+                  <path d="M5 11v3c0 1.22 3.13 2.2 7 2.2s7-.98 7-2.2v-3" stroke="#DC382D" stroke-width="1.1" />
+                </svg><span>Redis</span><small>Cache</small></div>
+              <div class="plat__stack-card"><svg viewBox="0 0 24 24" fill="none">
+                  <path d="M6.5 14.5c-1.5.5-2.5 1-2.5 1.5 0 .83 3.58 1.5 8 1.5s8-.67 8-1.5c0-.5-1-.95-2.5-1.45"
+                    stroke="#FF9900" stroke-width="1.3" stroke-linecap="round" />
+                  <path d="M8 6l-2 8h1.5l.5-2h3l.5 2H13L11 6H8zm.75 4.5L9.5 7.5l.75 3h-1.5z" fill="#FF9900" />
+                </svg><span>AWS</span><small>Cloud</small></div>
+              <div class="plat__stack-card"><svg viewBox="0 0 24 24" fill="none">
+                  <rect x="2.5" y="10" width="3" height="2.5" rx=".4" fill="#2496ED" />
+                  <rect x="6.5" y="10" width="3" height="2.5" rx=".4" fill="#2496ED" />
+                  <rect x="10.5" y="10" width="3" height="2.5" rx=".4" fill="#2496ED" />
+                  <rect x="14.5" y="10" width="3" height="2.5" rx=".4" fill="#2496ED" />
+                  <path d="M2.5 13.5c0 2.5 3 4 7.5 4s8.5-1 9.5-3c.5-1 .5-2-.5-2.5" stroke="#2496ED" stroke-width="1.1"
+                    stroke-linecap="round" />
+                </svg><span>Docker</span><small>Infra</small></div>
+            </div>
+            <div class="plat__log" id="platLog">
+              <div class="log-header">Terminal · Live</div>
+              <div class="log-body" id="logBody"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section class="section" id="portfolio">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow">Cases de Sucesso</span>
+        <h2 class="split-title">Projetos que falam por si.</h2>
+        <p>Cada entrega é um produto real — construído com precisão, pensado para crescer.</p>
+      </div>
+      <div class="portfolio-grid">
+        <article class="pf-card reveal">
+          <div class="pf-card__img-wrap">
+            <img src="https://placehold.co/800x500/0a0a0a/22C55E?text=Linden+Fabricating" alt="Linden Fabricating"
+              class="pf-card__img" />
+            <div class="pf-card__overlay"><span class="pf-card__metric">+187%</span><span
+                class="pf-card__metric-label">Aumento de leads</span></div>
+          </div>
+          <div class="pf-card__body">
+            <div class="pf-card__meta">
+              <span class="pf-card__location"><svg width="11" height="11" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                    fill="currentColor" />
+                </svg>Prince George, Canadá</span>
+              <div class="pf-card__tags"><span class="pf-tag">#UI</span><span class="pf-tag">#Dev</span></div>
+            </div>
+            <h3 class="pf-card__title">Linden Fabricating Ltd.</h3>
+            <a href="https://www.linfab.com" target="_blank" rel="noopener" class="pf-card__url">www.linfab.com</a>
+            <p class="pf-card__desc">Website institucional com catálogo de máquinas voltadas para manuseio de toras.</p>
+            <div class="pf-card__stack"><span>Next.js</span><span>Supabase</span><span>n8n</span><span
+                class="pf-card__days">30 dias</span></div>
+            <a href="https://www.linfab.com" target="_blank" rel="noopener" class="btn btn--ghost pf-card__btn">Ver
+              projeto <svg width="13" height="13" viewBox="0 0 24 24" fill="none">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg></a>
+          </div>
+        </article>
+        <article class="pf-card reveal">
+          <div class="pf-card__img-wrap">
+            <img src="https://placehold.co/800x500/0a0a0a/22C55E?text=Projeto+em+breve" alt="Em breve"
+              class="pf-card__img" />
+            <div class="pf-card__overlay"><span class="pf-card__metric" style="color:#22C55E">Em breve</span></div>
+          </div>
+          <div class="pf-card__body">
+            <div class="pf-card__meta">
+              <span class="pf-card__location"><svg width="11" height="11" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                    fill="currentColor" />
+                </svg>Brasil</span>
+              <div class="pf-card__tags"><span class="pf-tag">#SaaS</span><span class="pf-tag">#Automação</span></div>
+            </div>
+            <h3 class="pf-card__title">Em breve...</h3>
+            <span class="pf-card__url">Projeto em produção</span>
+            <p class="pf-card__desc">Novo projeto em desenvolvimento. Acompanhe as novidades da NAIRU.</p>
+            <div class="pf-card__stack"><span>React</span><span>Stripe</span><span>React</span></div>
+            <a href="#cta" class="btn btn--ghost pf-card__btn">Falar com a gente →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section" id="testimonials">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow">O que nossos clientes dizem</span>
+        <h2 class="split-title">Empresas que escalam com a NAIRU.</h2>
+      </div>
+      <div class="tests">
+        <article class="test reveal">
+          <div class="test__stars">★★★★★</div>
+          <p>"A NAIRU não entregou só um site, entregou um sistema que mudou nossa operação. Em 3 meses dobramos o
+            número de clientes."</p>
+          <div class="test__who">
+            <div class="avatar">RM</div>
+            <div><strong>Rafael Moreira</strong><span>CEO · Halcyon</span></div>
+          </div>
+        </article>
+        <article class="test reveal">
+          <div class="test__stars">★★★★★</div>
+          <p>"O nível de design é absurdo. Parece um produto da Apple. Nossos leads pararam de pedir desconto."</p>
+          <div class="test__who">
+            <div class="avatar">CL</div>
+            <div><strong>Carolina Lima</strong><span>Founder · Lumen</span></div>
+          </div>
+        </article>
+        <article class="test reveal">
+          <div class="test__stars">★★★★★</div>
+          <p>"As automações cortaram 60 horas/mês do nosso time. A NAIRU virou parte da nossa engenharia."</p>
+          <div class="test__who">
+            <div class="avatar">DT</div>
+            <div><strong>Diego Tavares</strong><span>COO · Orbital</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta" id="cta">
+    <div class="container">
+      <div class="cta__box reveal">
+        <div class="cta__logo"><img src="logo.png" alt="NAIRU" class="cta__logo-img" /></div>
+        <span class="eyebrow">Vamos construir juntos</span>
+        <h2>Sua empresa ainda depende de <span class="grad-text">processos manuais?</span></h2>
+        <p>Descubra como um ecossistema digital pode aumentar suas vendas e reduzir custos operacionais. Em até 24h
+          respondemos com uma proposta personalizada.</p>
+        <form class="cta__form" id="contactForm">
+          <div class="cta__row">
+            <div class="cta__field"><label for="cf-name">Nome completo</label><input type="text" id="cf-name"
+                placeholder="Seu nome" required autocomplete="name" /></div>
+            <div class="cta__field"><label for="cf-whatsapp">WhatsApp</label><input type="tel" id="cf-whatsapp"
+                placeholder="(11) 99999-9999" required autocomplete="tel" /></div>
+          </div>
+          <div class="cta__field"><label for="cf-email">E-mail</label><input type="email" id="cf-email"
+              placeholder="seu@email.com" required autocomplete="email" /></div>
+          <div class="cta__field"><label for="cf-company">Sua empresa</label><input type="text" id="cf-company"
+              placeholder="Nome da empresa ou segmento" /></div>
+          <div class="cta__field"><label for="cf-message">Fale mais sobre o que você precisa</label><textarea
+              id="cf-message" rows="4" placeholder="Descreva seu projeto, desafio ou o que você está buscando..."
+              required></textarea></div>
+          <button class="btn btn--primary btn--lg btn--cta-main mag-btn" type="submit" id="contactBtn">
+            Agendar diagnóstico gratuito
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+              <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+          <p class="cta__feedback" id="contactFeedback" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <div class="footer__logo"><img src="logo.png" alt="NAIRU" class="footer__logo-img" /><span>NAIRU</span></div>
+        <p>Construindo o futuro digital das empresas modernas.</p>
+      </div>
+      <div class="footer__cols">
+        <div>
+          <h4>Empresa</h4><a href="#about">Sobre</a><a href="#services">Serviços</a><a href="#testimonials">Clientes</a>
+        </div>
+        <div>
+          <h4>Produto</h4><a href="#platform">Plataforma</a><a href="#portfolio">Portfólio</a><a href="#cta">Contato</a>
+        </div>
+        <div>
+          <h4>Social</h4><a href="#">Instagram</a><a href="#">LinkedIn</a><a href="#">X / Twitter</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© 2026 NAIRU. Todos os direitos reservados.</span>
+      <span>Feito com precisão no Brasil 🇧🇷</span>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+  <script src="nairu.js"></script>
+</body>
+
+</html>
